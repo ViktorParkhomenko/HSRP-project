@@ -1,9 +1,4 @@
 # Hot Standby Router Protocol (HSRP)
-- Configure HSRP for servicing the virtual IP address 10.1.1.1
-- R1 = Active Router, R2 = Standby Router
-- Configure routers to reclaim roles in case of a failure
-- Test failover configu
-
 
 In this project, I reviewed and configured HSRP (Hot Standby Router Protocol).
 HSRP is a first-hop redundancy protocol (FHRP) that allows multiple routers to provide a single virtual gateway for hosts. This ensures redundancy and avoids a single point of failure in the default gateway.
@@ -122,12 +117,12 @@ With resign messages, failover was immediate.
 Subsecond timers (v2) improved convergence speed.
 <img width="864" height="83" alt="image" src="https://github.com/user-attachments/assets/8cbd3c62-ac83-4e4c-91b6-ce0d8b4fff99" />
 
-Best Practices
+### Best Practices
 
 Make the HSRP active router also the STP root bridge for the VLAN.
 
 If routers handle multiple VLANs, load balance HSRP groups (e.g., R1 active for VLANs 10–20, R2 active for VLANs 30–40).
 
-Conclusion
+### Conclusion
 
 HSRP provides seamless gateway redundancy in Cisco environments. With advanced features like preemption, object tracking, authentication, and subsecond timers, it ensures high availability and quick failover for enterprise networks.
