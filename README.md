@@ -77,9 +77,12 @@ On R2 (Standby Router)
 
 
 Advanced Features
-- Subsecond Timers (HSRP v2)
+Subsecond Timers (HSRP v2)
 - standby version 2
-- standby 10 timers msec 100 msec 300
+- standby timers msec 100 msec 300
+<img width="637" height="108" alt="image" src="https://github.com/user-attachments/assets/a77d4f77-df54-4ac2-b7ba-9f346d1284ef" />
+<img width="666" height="127" alt="image" src="https://github.com/user-attachments/assets/651194a8-f76d-4728-b6c9-4926279d08df" />
+
 
 Interface Tracking (Enhanced Object Tracking)
 
