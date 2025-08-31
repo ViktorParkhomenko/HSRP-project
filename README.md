@@ -10,7 +10,7 @@ HSRP is a first-hop redundancy protocol (FHRP) that allows multiple routers to p
 
 <img width="907" height="752" alt="image" src="https://github.com/user-attachments/assets/d29dc77b-e96d-4830-95d4-08942f5cbfe4" />
 
-How HSRP Works
+### How HSRP Works
 
 The PC’s default gateway points to a virtual IP address (e.g., 10.1.1.1), not tied to a physical router.
 
@@ -26,21 +26,27 @@ Hello: 3 sec
 
 Hold: 10 sec (must be ≥ 3 × hello)
 
-HSRP Characteristics
+### HSRP Characteristics
 
-Cisco proprietary, defined in RFC 2281.
+- Cisco proprietary, defined in RFC 2281.
 
-Two versions exist:
+- Two versions exist:
 
-Version 1 → Virtual MAC format: 0000.0C07.ACxx (xx = group number). Uses multicast 224.0.0.2.
+Version 1 Virtual MAC format: 0000.0C07.ACxx (xx = group number). Uses multicast 224.0.0.2.
 
-Version 2 → Supports more groups and subsecond timers (e.g., 300 ms failover). Uses multicast 224.0.0.102.
+Version 2 Supports more groups and subsecond timers (e.g., 300 ms failover). Uses multicast 224.0.0.102.
 
-Active vs Standby router terminology.
+- Active vs Standby router terminology.
 
-Preemption (disabled by default) allows a router with higher priority to retake the active role when it recovers.
+- Preempt Option (disabled by default) allows a router with higher priority to retake the active role when it recovers.
+- Default Hello Interval: 3 sec.
+- Default Holdtime: 10 sec.
+- Version 1 Multicast address: 224.0.0.2
+- Version 2 Multicast address: 224.0.0.102
+- Cannot Use Interface IP Address as Virtual IP Address 
 
-Lab Topology
+
+### Lab Topology:
 
 PC default gateway: 10.1.1.1 (virtual IP).
 
