@@ -8,6 +8,8 @@
 In this project, I reviewed and configured HSRP (Hot Standby Router Protocol).
 HSRP is a first-hop redundancy protocol (FHRP) that allows multiple routers to provide a single virtual gateway for hosts. This ensures redundancy and avoids a single point of failure in the default gateway.
 
+<img width="907" height="752" alt="image" src="https://github.com/user-attachments/assets/d29dc77b-e96d-4830-95d4-08942f5cbfe4" />
+
 How HSRP Works
 
 The PC’s default gateway points to a virtual IP address (e.g., 10.1.1.1), not tied to a physical router.
