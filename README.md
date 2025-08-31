@@ -88,11 +88,15 @@ Interface Tracking (Enhanced Object Tracking)
 
 Decrease priority if WAN interface goes down:
 
-track 1 interface g0/2 line-protocol
-interface g0/1
- standby 10 track 1 decrement 20
+- int g0/2
+- standby 10 track 1 decrement 20
+- exit
+- track 1 int gi0/1 line-protocol
 
 Route Tracking
+
+<img width="846" height="196" alt="image" src="https://github.com/user-attachments/assets/75e403a3-f7d2-4059-86bd-616b74eb927e" />
+
 
 Monitor a route in routing table:
 
